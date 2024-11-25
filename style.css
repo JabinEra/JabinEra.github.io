@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0f56a3;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.search-bar {
+  flex: 1;
+  margin: 0 20px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.user-menu {
+  font-size: 14px;
+}
+
+/* Layout */
+.main-content {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.profile-pic {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.intro-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.intro-section li {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.info{
+  flex: 1;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.timeline {
+  flex: 1;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.post-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.post-options button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0f56a3;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  /*.info {
+    margin: 0;
+  }*/
+  .timeline {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .main-content {
+    margin: 10px;
+  }
+
+  .post-options button {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+
+  .sidebar {
+    padding: 10px;
+  }
+
+  .timeline {
+    padding: 10px;
+  }
+
+  .post-box textarea {
+    font-size: 14px;
+  }
+
+  .post-options button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
